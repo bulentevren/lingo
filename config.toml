@@ -151,10 +151,10 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = false
+enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-no = 'Thanks for your feedback. Please <a href="https://github.com/cncf/glossary/issues/new">tell us how we can improve</a>.'
-yes = 'Thank you! Please <a href="https://github.com/cncf/glossary/issues/new">let us know if you have any suggestions</a>.'
+no = 'Thanks for your feedback. Please <a href="https://github.com/bulentevren/lingo/issues/new">tell us how we can improve</a>.'
+yes = 'Thank you! Please <a href="https://github.com/bulentevren/lingo/issues/new">let us know if you have any suggestions</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page,
