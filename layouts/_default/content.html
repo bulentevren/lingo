@@ -1,5 +1,6 @@
 <div class="td-content">
 	<h1>{{ .Title }}</h1>
+	<span style="font-size:1.5rem;padding-right:20px">{{ .Content }}</span>
 	{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
 	<header class="article-meta">
 		{{ $context := . }}
@@ -15,8 +16,13 @@
 		{{ if (and (not .Params.hide_readingtime) (.Site.Params.ui.readingtime.enable)) }}
 			{{ partial "reading-time.html" . }}
 		{{ end }}
-	</header>    
-	{{ .Content }}
+	</header>  
+	
+
+    <p style="opacity: .5;margin-top: 80px;  font-style: italic; font-weight: 300;"><a style="color: gray;" href="https://campusfounders.de"> {{( T "ui_cta" ) }}</a></p>
+
+
+
 	{{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable)) }}
 		{{ partial "feedback.html" .Site.Params.ui.feedback }}
 		<br />

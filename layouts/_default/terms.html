@@ -1,22 +1,19 @@
 {{ define "main" }}
 <div class="td-content">
-    <h1>{{ title ( T "ui_search_by_tags" ) }}</h1>
+    <h1>{{ title ( T "ui_search_by_tags" ) }} Categories</h1>
 
-    <p>{{ ( T "ui_tags_intro" ) }}</p>
-
+    <style>.category button{font-size: 1rem;background-color: #bccf0f;color: white;border-radius: 6px;}</style>
+    <div class="canonical-tag-container category">
+    <button id="tag-Marketing" class="canonical-tag" data-target="tag-Marketing">Marketing</button>
+    <button id="tag-Entrepreneurship" class="canonical-tag" data-target="tag-Entrepreneurship">Entrepreneurship</button>
+    <button id="tag-Finance" class="canonical-tag" data-target="tag-Finance">Finance</button>
+    <button id="tag-Legal" class="canonical-tag" data-target="tag-Legal">Legal</button>
+    <button id="tag-Innovation" class="canonical-tag" data-target="tag-Innovation">Innovation</button>
+</div>
     <script src="{{ "js/tag-search.js" | relURL }}"></script>
+    <h3 style="opacity: .5;margin-bottom: 50px;">{{ ( T "ui_tags_intro" ) }}</h3>
 
     {{ $tags := index .Site.Taxonomies "tags" }}
-
-    <div class="canonical-tag-container">
-        {{ range $tags }}
-            {{ $tagid := printf "tag-%s" ( replace .Page.Title " " "-" ) }}
-            <button id="{{ $tagid  }}" class="canonical-tag" data-target="{{ $tagid  }}">{{ title .Page.Title }}</button>
-        {{ end }}
-        <span><button class="button-reset-to-text" id="select-all-tags">{{ T "ui_select_all" }}</button></span>
-        <span><button class="button-reset-to-text" id="deselect-all-tags">{{ T "ui_deselect_all" }}</button></span>
-    </div>
-    
     {{ $glossary_items := (where .Site.Pages "Params.status" "Completed") | union (where .Site.Pages "Params.status" "completed") }}
     {{ with $glossary_items }}
         {{ $glossary_terms := sort . "Title" "asc" }}
@@ -40,6 +37,16 @@
             {{ end }}
         </div>
     {{ end }}
+    <div class="canonical-tag-container">
+        {{ range $tags }}
+            {{ $tagid := printf "tag-%s" ( replace .Page.Title " " "-" ) }}
+            <button id="{{ $tagid  }}" class="canonical-tag" data-target="{{ $tagid  }}">{{ title .Page.Title }}</button>
+        {{ end }}
+        <span><button class="button-reset-to-text" id="select-all-tags">{{ T "ui_select_all" }}</button></span>
+        <span><button class="button-reset-to-text" id="deselect-all-tags">{{ T "ui_deselect_all" }}</button></span>
+    </div>
+    
+
 
 </div>
 {{ end }}

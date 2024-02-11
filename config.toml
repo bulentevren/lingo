@@ -1,5 +1,5 @@
-baseURL = "https://glossary.cncf.io/"
-title = "Cloud Native Glossary"
+baseURL = "https://glossary.campusfounders.de/"
+title = "Campus Founders Glossary"
 
 enableRobotsTXT = true
 
@@ -7,7 +7,7 @@ enableRobotsTXT = true
 theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
-enableGitInfo = true
+enableGitInfo = false
 
 # Language settings
 contentDir = "content/en"
@@ -54,115 +54,19 @@ resampleFilter = "CatmullRom"
 [languages]
 [languages.en]
 languageName = "English"
-title = "Cloud Native Glossary"
+title = "Campus Founders Glossary"
 # Weight used for sorting.
 weight = 1
 [languages.en.params]
-description = "The CNCF Cloud Native Glossary Project is intended to be used as a reference for common terms used when talking about cloud native applications."
-
-#[languages.no]
-#title = "CNCF Glossary"
-#description = "Docsy er operativsystem for skyen"
-#languageName ="Norsk"
-#contentDir = "content/no"
-#time_format_default = "02.01.2006"
-#time_format_blog = "02.01.2006"
-
-[languages.hi]
-contentDir = "content/hi"
-languageName = "हिन्दी (Hindi)"
-title = "क्लाउड नेटिव शब्दावली"
-weight = 2
-[languages.hi.params]
-description = "CNCF क्लाउड नेटिव शब्दावली परियोजना का उद्देश्य क्लाउड नेटिव एप्लिकेशन के बारे में बात करते समय प्रयोग किए जाने वाले सामान्य शब्दों के संदर्भ के रूप में उपयोग किया जाना है।"
-
-[languages.pt-br]
-contentDir = "content/pt-br"
-languageName = "Português"
-title = "Glossário Cloud Native"
-weight = 3
-[languages.pt-br.params]
-description = "O Projeto CNCF Glossário Cloud Native se destina a ser usado como uma referência para termos comuns usados ao falar sobre aplicações nativas de nuvem."
-
-[languages.it]
-contentDir = "content/it"
-languageName = "Italiano"
-title = "Glossario Cloud Native"
-weight = 4
-[languages.it.params]
-description = "Il progetto del Glossario CNCF Cloud Native è pensato per essere un riferimento per i termini comuni, usati nell'ambito delle applicazioni cloud native."
-
-[languages.ko]
-contentDir = "content/ko"
-languageName = "한국어 (Korean)"
-title = "클라우드 네이티브(Cloud Native) 용어집"
-weight = 5
-[languages.ko.params]
-description = "CNCF 클라우드 네이티브 용어집 프로젝트는 클라우드 네이티브 애플리케이션을 주제로 대화를 나눌 때 참조할 수 있는 공통의 용어 제공을 목표로 한다."
-
-[languages.es]
-contentDir = "content/es"
-languageName = "Español (Spanish)"
-title = "Cloud Native Glosario"
-weight = 6
-[languages.es.params]
-description = "El proyecto de CNCF Cloud Native Glosario pretende ser usado como una referencia para los terminos comunes usados cuando se habla acerca de las aplicaciones nativas para la nube."
-
-[languages.zh-cn]
-contentDir = "content/zh-cn"
-languageName = "简体中文 (Simplified Chinese)"
-title = "Cloud Native(云原生) Glossary"
-weight = 7
-[languages.zh-cn.params]
-description = "CNCF 云原生 Glossary 项目旨在用作讨论云原生应用程序时常用术语的参考"
-
-[languages.bn]
-contentDir = "content/bn"
-languageName = "বাংলা (Bengali)"
-title = "ক্লাউড নেটিভ শব্দকোষ"
-weight = 8
-[languages.bn.params]
-description = "CNCF ক্লাউড নেটিভ শব্দকোষ প্রকল্পটি ক্লাউড নেটিভ অ্যাপ্লিকেশন সম্পর্কে কথা বলার সময় ব্যবহৃত সাধারণ পদগুলির জন্য একটি রেফারেন্স হিসাবে ব্যবহার করার উদ্দেশ্যে।"
+description = "Campus Founders Startup Lingo helps you understand startup terms easily. It’s like a dictionary for startup language, covering everything from finance to tech talk. Whether you’re starting a business, investing in one, or just want to know more about startups, this guide has got you covered with simple explanations."
 
 [languages.de]
 contentDir = "content/de"
 languageName = "Deutsch"
-title = "Cloud Native Glossar"
+title = "Campus Founders Glossar"
 weight = 9
 [languages.de.params]
-description = "Das CNCF Cloud Native Glossar soll als Referenz für gängige Begriffe dienen, die im Zusammenhang mit Cloud Native Anwendungen verwendet werden."
-
-[languages.ur]
-contentDir = "content/ur"
-languageName = "اردو (Urdu)"
-title = "کلاؤڈ کی مقامی لغت"
-weight = 10
-[languages.ur.params]
-description = "CNCF کلاؤڈ کی مقامی لغت کا مقصد کلاؤڈ مقامی ایپلی کیشنز کے بارے میں بات کرتے وقت استعمال ہونے والی عام اصطلاحات کے حوالے کے طور پر استعمال کرنا ہے۔"
-
-[languages.fr]
-contentDir = "content/fr"
-languageName = "Français (French)"
-title = "Glossaire Cloud Native"
-weight = 11
-[languages.fr.params]
-description = "Le projet de Glossaire CNCF Cloud Native a pour objectif de référencer les termes courants utilisés dans les différentes applications Cloud Natives."
-
-[languages.zh-tw]
-contentDir = "content/zh-tw"
-languageName = "繁體中文 (Traditional Chinese)"
-title = "Cloud Native(雲端原生) Glossary"
-weight = 12
-[languages.zh-tw.params]
-description = "CNCF 雲端原生 Glossary 專案旨在用作討論雲端原生應用程式時常用術語的參考"
-
-[languages.ja]
-contentDir = "content/ja"
-languageName = "日本語 (Japanese)"
-title = "クラウドネイティブ用語集"
-weight = 13
-[languages.ja.params]
-description = "CNCF クラウドネイティブ用語集プロジェクトは、クラウドネイティブアプリケーションについて話すときに使われる一般的な用語のリファレンスとして使用することを目的としています。"
+description = "Campus Founders Startup Lingo hilft Ihnen, Begriffe aus der Startup-Szene leicht zu verstehen. Es ist wie ein Wörterbuch für die Sprache der Startups und deckt alles ab, von Finanzen bis hin zu technischem Gerede. Egal, ob Sie ein Unternehmen gründen, in ein Unternehmen investieren oder einfach nur mehr über Startups wissen wollen, dieser Leitfaden bietet Ihnen einfache Erklärungen."
 
 [markup]
 [markup.goldmark]
@@ -181,11 +85,11 @@ style = "tango"
 # section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Linux Foundation®"
-privacy_policy = "https://www.linuxfoundation.org/privacy"
+copyright = "Campus Founders"
+privacy_policy = "https://campusfounders.de/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
-images = ["images/cncf-glossary-social.jpg"]
+images = ["images/social-lingo.jpg"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
@@ -203,7 +107,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://glossary.campusfounders.de"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/cncf/glossary"
@@ -218,13 +122,13 @@ github_repo = "https://github.com/cncf/glossary"
 github_branch = "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "eda0239a7d3fd0d90"
+gcs_engine_id = ""
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
@@ -247,7 +151,7 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 no = 'Thanks for your feedback. Please <a href="https://github.com/cncf/glossary/issues/new">tell us how we can improve</a>.'
 yes = 'Thank you! Please <a href="https://github.com/cncf/glossary/issues/new">let us know if you have any suggestions</a>.'

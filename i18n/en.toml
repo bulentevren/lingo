@@ -4,6 +4,13 @@
 
 [ui_pager_prev]
 other = "Previous"
+[ui_cta]
+other = "Visit CampusFounders.de to explore and join our startup community and programs!"
+
+
+
+
+
 
 [ui_pager_next]
 other = "Next"
@@ -12,7 +19,7 @@ other = "Next"
 other = "Read more"
 
 [ui_search]
-other = "Search this site…"
+other = "Search term…"
 
 # Used in sentences such as "Posted in News"
 [ui_in]
@@ -26,11 +33,11 @@ other = "Tag"
 [ui_tags]
 other = "Tags"
 [ui_search_by_tags]
-other = "Browse by Tags"
+other = "Browse"
 [ui_tags_intro]
-other = "We've categorized the glossary terms. Use the filters to browse terms by tag."
+other = "We've categorized the glossary terms. Use green buttons above to browse categories, gray buttons below for tags. You can select multiple categories and tags."
 [ui_or_search_by_tags]
-other = "...or browse by tag"
+other = "...or browse"
 [ui_select_all]
 other = "Select All"
 [ui_deselect_all]

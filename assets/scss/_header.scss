@@ -14,7 +14,6 @@
 		padding-bottom: 0;
 	}
 	&:after {
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent);
 		content: '';
 		height: 20px;
 		position: absolute;
@@ -32,7 +31,7 @@
 		.navbar-logo {
 			display: block;
 			svg {
-				height: 40px;
+				height: 70px;
 			}
 		}
 	}
@@ -105,7 +104,7 @@
 						}
 					}
 					&.active span:after {
-						background-color: #99ebff;
+						background-color: #bccf0f;
 					}
 				}
 				// Topnav dropdown.

@@ -5,7 +5,8 @@
   "main": "none.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "netlify dev -c \"hugo serve --minify -DFE -w\""
+    "serve": "netlify dev -c \"hugo serve --minify -DFE -w\"",
+    "build": "hugo --minify -DFE"
   },
   "repository": {
     "type": "git",
